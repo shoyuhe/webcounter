@@ -10,8 +10,8 @@ At start the counter is zero
     Click Button  Nollaa
     Page Should Contain  nappia painettu 0 kertaa
 
-When button pressed twice the counter is two
+When button pressed, set counter value to 10
     Go To  ${HOME_URL}
-    Click Button  Paina
-    Click Button  Paina
-    Page Should Contain  nappia painettu 2 kertaa
+    Input Text  value  10
+    Click Button  Aseta
+    Page Should Contain  nappia painettu 10 kertaa
